@@ -8,18 +8,20 @@
     <title>About</title>
 
     <h1>
-        <div class="center">About Us</div>
+        <div class="center">Hah, Buttons!!</div>
         </h1>
+        <h2>
+        Be sure to hover over EVERY button to see cool effects!
+        </h2>
          
             <br>
         
-    <img src="logo.png" style="width:70px;height:60px"id="lolimg">
-
+    <img src="logo.png" style="width:70px;height:60px">
         
         <link rel="shortcut icon" type="image/png" href="favicon.ico" />
 
     <p>
-    Who am I? What is this? Who are you?
+    Spoooky
     </p>
 
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -32,28 +34,6 @@
     font-family: 'Bebas'; /*a name to be used later*/
     src: url('BebasBold.otf'); /*URL to font*/
 }
-    
-     #lolimg{
-       position: absolute;
-        top: 20px;
-        left: 0px;
-    }
-    #hover-button{
-        background-color: aqua;
-  border: none;
-    font-family: 'Bebas';
-  color: black;
-    
-    border-radius: 90%;
-  padding: 155px 175px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-       position:absolute;
-    transition: .5s ease;
-    top: 300px;
-    left: 470px;
-    }
 
 
 h1 {
@@ -67,7 +47,7 @@ h1 {
   display: inline-block;
     position: absolute;
         top: 120px;
-    left: 480px;
+    left: 370px;
   background-size: 120% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,6 +64,34 @@ h1 {
                     #FFF800);
   animation: .8s shake infinite alternate;
 }
+    h2 {
+
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 2vw;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+    position: absolute;
+        top: 220px;
+    left: 70px;
+  background-size: 120% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: linear-gradient(45deg, 
+                    #FFF800, 
+                    #FF1361,
+                    #44107A,
+                    #7794ff);
+ 
+}
 
 @keyframes shake {
   0% { transform: skewX(-15deg); }
@@ -97,7 +105,7 @@ h1 {
      
     
     html { 
-  background: url(back.png) no-repeat center center fixed; 
+  background: url(gradback.jpg) no-repeat center center fixed; 
   background-size: cover;
 }
     
@@ -166,7 +174,89 @@ h1 {
     top: 20px;
     left: 750px;
 }
+       #black-button {
+  background-color: purple;
+  border: none;
+    font-family: 'Bebas';
+  color: orange;
+    
+    border-radius: 90%;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor:crosshair;
+       position:absolute;
+    transition: .5s ease;
+    top: 500px;
+    left: 300px;
+}
 
+    #yellow-button {
+  background-color: purple;
+  border: none;
+    font-family: 'Bebas';
+  color: orange;
+    
+    border-radius: 90%;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor:progress;
+       position:absolute;
+    transition: .5s ease;
+    top: 400px;
+    left: 700px;
+}
+    #red-button {
+    font-family: 'Bebas';
+
+    
+    border-radius: 90%;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor:alias;
+       position:absolute;
+    transition: .5s ease;
+    top: 400px;
+    left: 500px;
+}
+    #purple-button {
+    font-family: 'Bebas';
+    border-radius: 90%;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor:all-scroll;
+       position:absolute;
+    transition: .5s ease;
+    top: 600px;
+    left: 900px;
+}
+    #plus-button {
+    font-family: 'Bebas';
+    border-radius: 90%;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor:zoom-in;
+       position:absolute;
+    transition: .5s ease;
+    top: 500px;
+    left: 900px;
+}
+#minus-button {
+    font-family: 'Bebas';
+    border-radius: 90%;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor:zoom-out;
+       position:absolute;
+    transition: .5s ease;
+    top: 400px;
+    left: 900px;
+}
 
     body{
         font-family: 'Fjalla One',  sans-serif;
@@ -188,9 +278,7 @@ h1 {
   background-color: green;
     color: red;
 }
-    #hover-button:hover {
-  background: url(aboutimg.gif) ; 
-}
+    
 
     
 
@@ -213,14 +301,14 @@ h1 {
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
-      margin-bottom: 50%;
-    width: 300%; 
+    margin-left: 0%;
+      margin-bottom: 0%;
+    width: 100%; 
   }
 
   to {
     margin-left: 0%;
-      margin-bottom: 38.5%;
+      margin-bottom: 10%;
     width: 100%;
       
   }
@@ -249,9 +337,6 @@ h1 {
   font-family: 'Bebas';
 color:yellow
 }
-
-
-no-repeat center center fixed
 </body>-->
     
     
@@ -259,9 +344,14 @@ no-repeat center center fixed
 
 <a href="about.html"><button class="button" id ="about-button">About Us</button></a>
     <a href="index.html"><button class="button" id="home-button">Home</button></a>
-       <a href="buttonpage.html"><button class="button" id="button-button">Button Page</button></a>
-      <a href="#"><button class="button" id="hover-button">Hover Me</button></a>
+    <a href="buttonpage.html"><button class="button" id="button-button">Button Page</button></a>
  <a class="w3-btn w3-black w3-disabled" id="dis-button" href="#">Secret</a>
+    <button class="w3-button w3-black"  id="black-button">Black</button>
+<button class="w3-button w3-yellow" id="yellow-button">Yellow</button>
+<button class="w3-button w3-red" id="red-button">Red</button>
+<button class="w3-button w3-purple" id="purple-button">Purple</button>
+    <button class="w3-button w3-circle w3-teal" id="plus-button">+</button>
+      <button class="w3-button w3-circle w3-aqua" id="minus-button">-</button>
 
 </body>
     
