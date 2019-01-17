@@ -1,0 +1,257 @@
+<html>
+    
+     <head>
+   <title>TablesOfTime</title>
+        <link rel="shortcut icon" href="images/favicone.ico">
+        <link rel="apple-touch-icon" href="images/favicone.png">
+        
+        
+    </head>
+
+<table border="1">
+  <th>Inventor</th><th>Technology</th>
+  <tr>
+     <td>Tim Berners-Lee</td><td>WWW & HTML</td>
+  </tr>
+  <tr>
+     <td>Håkon Wium Lie</td><td>CSS</td>
+  </tr>
+  <tr>
+     <td>Brenden Eich</td><td>Javascript</td>
+  </tr>
+</table>
+
+    <h3>1995 - Brenden Eich invents JavaScript</h3>
+
+
+
+    
+     <style>
+        
+        @font-face {
+    font-family: 'Bebas'; /*a name to be used later*/
+    src: url('BebasBold.otf'); /*URL to font*/
+}
+           h3{   
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 2.9vw;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+    position: absolute;
+        top: 100px;
+    left: 130px;
+  background-size: 120% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: linear-gradient(45deg, 
+                    #c6ffdd, 
+                    #fbd786,
+                    #f7797d,
+                    #FFF800);
+        }
+         
+         body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+h1,
+h6 {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	right: 0;
+	left: 0;
+}
+    #html-button {
+   background-image: linear-gradient(45deg, 
+                    #c6ffdd, 
+                    #fbd786,
+                    #f7797d,
+                    #FFF800);
+  border: none;
+    font-family: 'Bebas';
+  color: purple;
+    
+    border-radius: 25%;
+  padding: 19px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+       position:absolute;
+    transition: .5s ease;
+    top: 10px;
+    left: 460px;
+}
+    #home-button {
+  background-image: linear-gradient(45deg, 
+                    #c6ffdd, 
+                    #fbd786,
+                    #f7797d,
+                    #FFF800);
+  border: none;
+    font-family: 'Bebas';
+  color: purple;
+    border-radius: 25%;
+  padding: 19px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+       position:absolute;
+    transition: .5s ease;
+    top: 10px;
+    left: 340px;
+}
+        #css-button {
+   background-image: linear-gradient(45deg, 
+                    #c6ffdd, 
+                    #fbd786,
+                    #f7797d,
+                    #FFF800);
+  border: none;
+    font-family: 'Bebas';
+  color: purple;
+    border-radius: 25%;
+  padding: 19px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+       position:absolute;
+    transition: .5s ease;
+    top: 10px;
+    left: 620px;
+}
+        #js-button {
+   background-image: linear-gradient(45deg, 
+                    #c6ffdd, 
+                    #fbd786,
+                    #f7797d,
+                    #FFF800);
+  border: none;
+    font-family: 'Bebas';
+  color: purple;
+    border-radius: 25%;
+  padding: 19px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+       position:absolute;
+    transition: .5s ease;
+    top: 10px;
+    left: 770px;
+}
+        #site-button {
+   background-image: linear-gradient(45deg, 
+                    #c6ffdd, 
+                    #fbd786,
+                    #f7797d,
+                    #FFF800);
+  border: none;
+    font-family: 'Bebas';
+  color: purple;
+    border-radius: 25%;
+  padding: 19px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+       position:absolute;
+    transition: .5s ease;
+    top: 10px;
+    left: 910px;
+}
+         
+        
+    </style>
+    <script>
+
+function buildmyTable() {
+
+  var inventors = [{name:"Tim Berners-Lee",invention:"WWW & HTML"},{name:"Haken Wium Lie",invention:"CSS"},{name:"Brendan Eich",invention:"Javascript"}];
+
+  // build a string variable with all the table code and data
+  var mytable = "<table border='1'>";
+  mytable = mytable + "<th>Inventor</th><th>Invention</th>";
+
+  // loop through data table to add data
+  for (i = 0; i < inventors.length; i = i + 1) {
+    mytable = mytable + "<tr>";
+    mytable = mytable + "<td>" + inventors[i].name + "</td><td>" + inventors[i].invention + "</td>";
+    mytable = mytable + "</tr>";
+  }
+
+  mytable = mytable + "</table>";
+
+  // get the div and substitute mytable data for it
+  var placetoprint = document.getElementById("printmytable");
+  placetoprint.innerHTML = mytable;
+
+}
+
+buildmyTable()
+
+</script>
+    
+    <body>
+    <a href="html.html"><button class="button" id="html-button">HTML Page</button></a>
+    <a href="index.html"><button class="button" id="home-button">Home</button></a>
+    <a href="css.html"><button class="button" id="css-button">CSS Page</button></a>
+    <a href="js.html"><button class="button" id="js-button">JS Page</button></a>
+    <a href="https://alenniu.github.io/y10web/index.html"><button class="button" id="site-button">Other Site</button></a>    
+    </body>
+
+
+    
+    </html>

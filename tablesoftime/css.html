@@ -1,0 +1,257 @@
+  <html>
+
+       <head>
+   <title>TablesOfTime</title>
+        <link rel="shortcut icon" href="images/favicone.ico">
+        <link rel="apple-touch-icon" href="images/favicone.png">
+        
+        
+    </head>
+      
+<p7><img src="fore.gif" alt="Notice! This service is temporarily out of order."style="width:230px;height:240px;"></p7>
+    <p8><img src="fore.gif" alt="Notice! This service is temporarily out of order."style="width:230px;height:240px;"></p8>
+      
+<style>
+    
+      @font-face {
+    font-family: 'Bebas'; /*a name to be used later*/
+    src: url('BebasBold.otf'); /*URL to font*/
+}
+ 
+     html{
+            background-image: linear-gradient(to bottom right, #009FFF, #ec2F4B);
+          width:100%;
+    height:100%;
+        }
+    
+    
+    h3{   
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 2.9vw;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+    position: absolute;
+        top: 100px;
+    left: 220px;
+  background-size: 120% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: linear-gradient(45deg, 
+                    #c6ffdd, 
+                    #fbd786,
+                    #f7797d,
+                    #FFF800);
+        }
+    p7{
+            position: absolute;
+            top: -25px;
+            left: 580px;
+        }
+        
+        p8{
+            position: absolute;
+            top: -25px;
+            left: -500px;
+        }
+    
+
+#inventors {
+  font-family: "Bebas", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+    letter-spacing: 1px;
+    animation: color-change 1.5s infinite;
+        
+}
+    @keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+      @keyframes color-change2 {
+    33.3% { color: orange; }
+    66.6% { color:aqua; }
+    100% { color:chartreuse; }
+}
+
+#inventors td, #inventors th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#inventors tr:nth-child(even){background-color: #f2f2f2;}
+
+    #inventors tr:nth-child(odd){background-color: orange;}
+
+#inventors tr:hover {
+    background-image: linear-gradient(#1E9600,#FFF200,#FF0000);
+    }
+
+#inventors th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+   background-image: linear-gradient(#00F260,#0575E6);
+    animation: color-change2 2s infinite;
+}
+
+</style>
+
+<table id="inventors" border="1">
+  <th>Inventor</th><th>Technology</th>
+  <tr>
+     <td>Tim Berners-Lee</td><td>WWW & HTML</td>
+  </tr>
+  <tr>
+     <td>Håkon Wium Lie</td><td>CSS</td>
+  </tr>
+  <tr>
+     <td>Brenden Eich</td><td>Javascript</td>
+  </tr>
+</table>
+
+<h3>1996 - Håkon Wium Lie invents CSS</h3>
+
+<div id="printmytable"></div>
+<img src="hakon.jpg" >
+      
+       <style>
+        
+           img{
+               border-radius: 30px;
+               position: absolute;
+               top: 200px;
+               left: 570px;
+               height: 240px;
+               width: 240px;
+           }
+        @font-face {
+    font-family: 'Bebas'; /*a name to be used later*/
+    src: url('BebasBold.otf'); /*URL to font*/
+}
+           
+           table{
+               position: absolute;
+               top: 500px;
+               left: 0px;
+           }
+    #html-button {
+   background-image: linear-gradient(45deg, 
+                    #c6ffdd, 
+                    #fbd786,
+                    #f7797d,
+                    #FFF800);
+  border: none;
+    font-family: 'Bebas';
+  color: purple;
+    
+    border-radius: 25%;
+  padding: 19px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+       position:absolute;
+    transition: .5s ease;
+    top: 10px;
+    left: 460px;
+}
+    #home-button {
+  background-image: linear-gradient(45deg, 
+                    #c6ffdd, 
+                    #fbd786,
+                    #f7797d,
+                    #FFF800);
+  border: none;
+    font-family: 'Bebas';
+  color: purple;
+    border-radius: 25%;
+  padding: 19px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+       position:absolute;
+    transition: .5s ease;
+    top: 10px;
+    left: 340px;
+}
+        #css-button {
+   background-image: linear-gradient(45deg, 
+                    #c6ffdd, 
+                    #fbd786,
+                    #f7797d,
+                    #FFF800);
+  border: none;
+    font-family: 'Bebas';
+  color: purple;
+    border-radius: 25%;
+  padding: 19px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+       position:absolute;
+    transition: .5s ease;
+    top: 10px;
+    left: 620px;
+}
+        #js-button {
+   background-image: linear-gradient(45deg, 
+                    #c6ffdd, 
+                    #fbd786,
+                    #f7797d,
+                    #FFF800);
+  border: none;
+    font-family: 'Bebas';
+  color: purple;
+    border-radius: 25%;
+  padding: 19px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+       position:absolute;
+    transition: .5s ease;
+    top: 10px;
+    left: 770px;
+}
+        #site-button {
+   background-image: linear-gradient(45deg, 
+                    #c6ffdd, 
+                    #fbd786,
+                    #f7797d,
+                    #FFF800);
+  border: none;
+    font-family: 'Bebas';
+  color: purple;
+    border-radius: 25%;
+  padding: 19px 25px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+       position:absolute;
+    transition: .5s ease;
+    top: 10px;
+    left: 910px;
+}
+        
+    </style>
+    
+    <body>
+    <a href="html.html"><button class="button" id="html-button">HTML Page</button></a>
+    <a href="index.html"><button class="button" id="home-button">Home</button></a>
+    <a href="css.html"><button class="button" id="css-button">CSS Page</button></a>
+    <a href="js.html"><button class="button" id="js-button">JS Page</button></a>
+    <a href="https://alenniu.github.io/y10web/index.html"><button class="button" id="site-button">Other Site</button></a>    
+    </body>
+
+      <iframe src="audio.mp3" allow="autoplay" style="display:none" id="iframeAudio" >
+    </iframe> 
+      </html>
