@@ -1,0 +1,181 @@
+<html>
+<body>
+    
+    <canvas id="myCanvas" width="1430" height="790"
+style="border:1px solid orange">
+    </canvas>
+
+
+<h3>Move the arrow keys to start the game!</h3>
+    <h2>Press "⌘+R" on your keyboard for a cool easter egg!</h2>
+    
+   <script>
+/*
+   index.html - draws a dot on the screen, credit to:
+   http://html5.litten.com/moving-shapes-on-the-html5-canvas-with-the-keyboard/
+   programmer: MHoel, Nov 3, 2014
+*/
+
+
+// Set some global variables
+var canvas;
+var ctx;
+var dx = 10;
+var dy = 10;
+var x = 150;
+var y = 300;
+var WIDTH = 1500;
+var HEIGHT = 800;
+
+function circle(x,y,r) {
+	ctx.beginPath();
+	ctx.arc(x, y, r, 0, Math.PI*2, true);
+	ctx.fill();
+}
+
+function rect(x,y,w,h) {
+	ctx.beginPath();
+	ctx.rect(x,y,w,h);
+	ctx.closePath();
+	ctx.fill();
+	ctx.stroke();
+}
+
+function clear() {
+	ctx.clearRect(0, 0, WIDTH, HEIGHT);
+}
+
+// Important starting function
+function init() {
+	canvas = document.getElementById("myCanvas");
+	ctx = canvas.getContext("2d");
+    
+	return setInterval(draw, 100); // this is key, tells draw function to fire 10x per second
+}
+
+function doKeyDown(evt){
+	switch (evt.keyCode) {
+		case 38:  /* Up arrow was pressed */
+            
+			if (y - dy > -20){
+				y -= dy;
+			}
+			break;
+		case 40:  /* Down arrow was pressed */
+			if (y + dy + 80< HEIGHT){
+				y += dy;
+			}
+			break;
+		case 37:  /* Left arrow was pressed */
+			if (x - dx > -20){
+				x -= dx;
+			}
+			break;
+		case 39:  /* Right arrow was pressed */
+			if (x + dx + 50 < WIDTH){
+				x += dx;
+			}
+			break;
+		}
+}
+       
+
+function draw() {
+	clear();
+	ctx.strokeStyle = "orange";
+	rect(0,0,WIDTH,HEIGHT);
+//	ctx.fillStyle = "green";
+//	circle(x, y, 100);
+     var img = new Image;
+           
+       img.onload = function(){
+        ctx.drawImage(img,x,y);
+       };
+       img.src="tilere.png";
+       
+       
+
+}
+       
+       
+      
+
+      
+
+// Main part of program
+init();
+window.addEventListener('keydown',doKeyDown,true);
+
+</script> 
+
+</body>
+
+        <style>
+        
+        #myCanvas{
+            background-image: url(hakon.jpg);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-size: cover;
+        }
+              h3{   
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 2.9vw;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+    position: absolute;
+        top: 0px;
+    left: 120px;
+  background-size: 120% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: linear-gradient(45deg, 
+                    #c6ffdd, 
+                    #fbd786,
+                    #f7797d,
+                    #FFF800);
+        }
+               h2{   
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 2.3vw;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+    position: absolute;
+        top: 70px;
+    left: 120px;
+  background-size: 120% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: linear-gradient(45deg, 
+                    #FFF800, 
+                    #f7797d
+                    );
+        }
+    
+    
+    </style>
+
+
+<iframe src="btsletgo.mp3" allow="autoplay" style="display:none" id="iframeAudio" >
+    </iframe> 
+</html>
+
