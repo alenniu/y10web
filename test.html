@@ -1,0 +1,93 @@
+<html>
+    
+    <title>Chat Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<h1>Welcome to My Chat Site </h1>
+   <br>
+<div id="tweets"></div>
+
+    
+    <script>
+    
+    mydiv = document.getElementById('tweets');
+        
+        data = {
+  "tweets": {
+    "m1SZOkQ93xR8IoOcxtWnaF0nibq0": {
+      "-LWY3zmdKbRcdefIm8_x": {
+        "tweet": "Does this actually work?"
+      }, "-LWSC4Ckltenibn6jpZf": {
+        "tweet": "How are you today"
+    },
+         },
+    "vUvDYGiZxcaweMf5qWeMTeAXfYl0": {
+      "-LWS4PcSY-vBweXXrSXA": {
+        "tweet": "Whoa! Hey, it does work"
+      },
+      "-LWSC4Ckltenibn6jpZf": {
+        "tweet": "How are you today"
+      },
+      "-LWSCQZQ9fe-2VRFBCUE": {
+        "tweet": "Im feeling good FYI"
+      },
+      "-LWY58OxulaANTFnzODh": {
+        "tweet": "Anyone there?"
+      }
+        
+    }
+      
+  },
+          
+  "users": {
+    "m1SZOkQ93xR8IoOcxtWnaF0nibq0": {
+      "email": "dcrawford@ucc.on.ca",
+      "profile_picture": "https://www.whatsappprofiledpimages.com/wp-content/uploads/2018/07/cool-profile-pictures2-291x300.jpg",
+      "username": "Kid"
+    },
+    "vUvDYGiZxcaweMf5qWeMTeAXfYl0": {
+      "email": "mhoel@ucc.on.ca",
+      "profile_picture": "https://cdn1.iconfinder.com/data/icons/avatars-55/100/avatar_profile_user_music_headphones_shirt_cool-512.png",
+      "username": "Other Kid"
+    }
+  }
+}
+        
+        myhtml = "<table>";
+        const keys = Object.keys(data.tweets);
+        for (const key of keys) {
+            console.log(data.tweets[key]);
+            const tweets = Object.keys(data.tweets[key]);
+            for (const tweet of tweets) {
+                console.log(data.tweets[key][tweet].tweet);
+                myhtml = myhtml + "<tr><td><img src='" +
+                    data.users[key].profile_picture + "' width = '40' title='" + data.users[key].username + "'><td>"
+                + data.tweets[key][tweet].tweet + "</td></tr>";
+                console.log(data.users[key].username);
+                
+            }
+        }
+        
+        myhtml = myhtml + "</table>"
+        mydiv.innerHTML = myhtml;
+    
+    </script>
+    
+    <a href="barebones.html" class="btn btn-default">Click Me Maybe</a>
+
+</html>
